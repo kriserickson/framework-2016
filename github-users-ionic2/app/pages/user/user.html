@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <button menuToggle *ngIf="!user">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>User Details</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="user" class="selection">
+    <h1>{{user.login}}</h1>
+    <img class="largerImage" [src]="user.avatar_url">
+    <div>
+
+    </div>
+  </div>
+</ion-content>

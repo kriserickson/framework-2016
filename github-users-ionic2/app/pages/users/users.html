@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Github Users
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item (click)="selectUser(user)" *ngFor="let user of users">
+      <img class="userImg" [src]="user.avatar_url"><span class="userName">{{user.login}}</span>
+    </ion-item>
+  </ion-list>
+</ion-content>

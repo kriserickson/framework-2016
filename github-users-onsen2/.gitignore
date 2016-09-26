@@ -1,0 +1,4 @@
+node_modules
+.idea
+.monaca/local_properties.json
+
